@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Invited! Vardaan's 1st Birthday 🌈</title>
+  <meta property="og:title" content="You're Invited! Vardaan's 1st Birthday 🌈">
+  <meta property="og:description" content="Join us as Vardaan of Joy turns ONE! Saturday, February 28th, 2026">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&family=Lobster&family=Pacifico&family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fall {
+      to { transform: translateY(100vh) rotate(720deg); }
+    }
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(3deg); }
+    }
+    @keyframes riseUp {
+      0%, 100% { transform: translateY(5px); }
+      50% { transform: translateY(-5px); }
+    }
+    .font-bebas { font-family: 'Bebas Neue', sans-serif; }
+    .font-lato { font-family: 'Lato', sans-serif; }
+    .font-lobster { font-family: 'Lobster', cursive; }
+    .font-pacifico { font-family: 'Pacifico', cursive; }
+    .font-cloudy { font-family: 'Indie Flower', cursive; }
+    .confetti { animation: fall 4s linear forwards; }
+    .float-gentle { animation: floatGentle 12s ease-in-out infinite; }
+    .float { animation: float 3s ease-in-out infinite; }
+    .rise-up { animation: riseUp 4s ease-in-out infinite; }
+    
+    /* Style the Google Form iframe container */
+    .google-form-container {
+      background: linear-gradient(to bottom, #fefce8, #fef3c7);
+      border-radius: 1rem;
+      border: 2px solid #fde047;
+      overflow: hidden;
+    }
+    .google-form-container iframe {
+      margin: -10px 0 -20px 0;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-sky-200 via-yellow-100 to-amber-100 py-8 px-4 relative overflow-hidden">
+  
+  <!-- Subtle Edge Floaters -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 5%; left: 3%;">🌈</div>
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 15%; right: 2%; animation-delay: 0.5s;">🪐</div>
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 35%; left: 1%; animation-delay: 1s;">☁️</div>
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 55%; right: 1%; animation-delay: 1.5s;">🌙</div>
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 75%; left: 2%; animation-delay: 2s;">⭐</div>
+    <div class="absolute text-2xl opacity-20 float-gentle" style="top: 85%; right: 3%; animation-delay: 2.5s;">🌳</div>
+  </div>
+
+  <!-- Confetti Container -->
+  <div id="confetti" class="fixed inset-0 pointer-events-none z-50"></div>
+
+  <div class="max-w-lg mx-auto relative z-10">
+    <!-- Main Card -->
+    <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-4" style="border-color: #FCD34D;">
+      
+      <!-- Header -->
+      <div class="bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 p-6 text-center relative overflow-hidden">
+        <div class="absolute left-3 top-3 text-2xl opacity-70 float">🌈</div>
+        <div class="absolute right-3 top-3 text-2xl opacity-70 float" style="animation-delay: 0.5s;">🪐</div>
+        <div class="absolute left-4 bottom-2 text-lg opacity-60 float" style="animation-delay: 0.3s;">☁️</div>
+        <div class="absolute right-4 bottom-2 text-lg opacity-60 float" style="animation-delay: 0.7s;">🌙</div>
+        
+        <!-- Half Sun SVG -->
+        <div class="flex justify-center mb-2 relative z-10 rise-up">
+          <svg width="100" height="60" viewBox="0 0 120 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.9">
+              <line x1="60" y1="8" x2="60" y2="0" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="30" y1="18" x2="24" y2="12" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="90" y1="18" x2="96" y2="12" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="15" y1="42" x2="6" y2="42" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="105" y1="42" x2="114" y2="42" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="22" y1="58" x2="16" y2="64" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="98" y1="58" x2="104" y2="64" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+            </g>
+            <defs>
+              <linearGradient id="sunGradient" x1="60" y1="20" x2="60" y2="72" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FBBF24"/>
+                <stop offset="1" stop-color="#F59E0B"/>
+              </linearGradient>
+            </defs>
+            <path d="M 15 72 A 45 45 0 0 1 105 72" fill="url(#sunGradient)"/>
+            <line x1="0" y1="72" x2="120" y2="72" stroke="#E5E7EB" stroke-width="2"/>
+          </svg>
+        </div>
+        <h1 class="font-pacifico text-4xl text-white drop-shadow-lg relative z-10">You're Invited!</h1>
+        <p class="font-cloudy text-white/90 text-lg mt-1">to explore the wonders of the world</p>
+      </div>
+
+      <!-- Content -->
+      <div class="p-6 text-center font-lato">
+        
+        <!-- Countdown Message -->
+        <div class="bg-gradient-to-r from-yellow-50 via-amber-50 to-orange-50 rounded-2xl p-4 mb-5 border-2 border-yellow-300">
+          <p class="font-bebas text-amber-600 text-2xl tracking-wide">🌈 COUNTDOWN BEGINS! 🪐</p>
+          <p class="font-cloudy text-amber-600 mt-1 text-lg">Exactly one month from now...</p>
+          <p class="font-lobster text-amber-700 text-2xl mt-1">Join us as Vardaan of Joy turns ONE ❤️</p>
+        </div>
+
+        <!-- Child's Name -->
+        <h2 class="font-lobster text-5xl text-amber-600 mb-1">Vardaan's</h2>
+        <p class="font-bebas text-4xl text-yellow-500 tracking-wider mb-4">BIG ONE! 🌟</p>
+
+        <!-- Big Number 1 -->
+        <div class="relative inline-block mb-4">
+          <div class="absolute -inset-6">
+            <div class="text-2xl absolute -top-1 -left-1 opacity-50 float">🌈</div>
+            <div class="text-xl absolute -top-1 -right-1 opacity-50 float" style="animation-delay: 0.5s;">☀️</div>
+            <div class="text-xl absolute -bottom-1 -left-1 opacity-50 float" style="animation-delay: 1s;">🪐</div>
+            <div class="text-xl absolute -bottom-1 -right-1 opacity-50 float" style="animation-delay: 1.5s;">🌙</div>
+          </div>
+          <span class="font-bebas text-9xl bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 bg-clip-text text-transparent relative z-10">1</span>
+        </div>
+
+        <!-- Date & Time -->
+        <div class="bg-gradient-to-r from-yellow-100 via-amber-100 to-orange-100 rounded-2xl p-4 mb-4 border-2 border-yellow-300">
+          <div class="flex items-center justify-center gap-3 mb-2">
+            <span class="text-3xl">📅</span>
+            <p class="font-bebas text-2xl text-amber-700 tracking-wide">Saturday, February 28th, 2026</p>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-3xl">🕛</span>
+            <p class="font-bebas text-2xl text-amber-700 tracking-wide">12:00 PM - 3:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="bg-yellow-50 rounded-2xl p-4 mb-4 border-2 border-yellow-200">
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-2xl">📍</span>
+            <div class="text-left">
+              <p class="font-lato font-bold text-amber-800">1169 Ridgeview Rd</p>
+              <p class="font-lato text-amber-600 text-sm">Woodstock, GA 30188</p>
+            </div>
+          </div>
+          <a 
+            href="https://maps.google.com/?q=1169+Ridgeview+Rd,+Woodstock,+GA+30188" 
+            target="_blank"
+            class="inline-block mt-3 font-lato text-sm px-4 py-2 bg-amber-100 text-amber-700 rounded-full hover:bg-amber-200 transition-colors"
+          >
+            📍 Open in Google Maps
+          </a>
+        </div>
+
+        <!-- Special Message -->
+        <div class="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-5 mb-6 border-2 border-yellow-200">
+          <p class="font-pacifico text-amber-700 text-xl leading-relaxed">Please come as you are! 💛</p>
+          <p class="font-cloudy text-amber-600 mt-2 text-lg leading-relaxed">
+            No gifts necessary — your presence is the greatest gift we could ask for. 
+            We just want to share this wonderful milestone with the people we love most!
+          </p>
+        </div>
+
+        <!-- Decorative Divider -->
+        <div class="flex items-center justify-center gap-2 mb-6">
+          <span class="text-xl">🌈</span>
+          <div class="h-1 w-8 bg-gradient-to-r from-yellow-300 to-amber-300 rounded"></div>
+          <span class="text-xl">☁️</span>
+          <div class="h-1 w-8 bg-gradient-to-r from-amber-300 to-orange-300 rounded"></div>
+          <span class="text-xl">🪐</span>
+          <div class="h-1 w-8 bg-gradient-to-r from-orange-300 to-yellow-300 rounded"></div>
+          <span class="text-xl">🌳</span>
+        </div>
+
+        <!-- RSVP Section with Embedded Google Form -->
+        <div class="google-form-container p-4">
+          <h3 class="font-bebas text-3xl text-amber-600 tracking-wide mb-2">RSVP 💌</h3>
+          <p class="font-cloudy text-amber-600 mb-4 text-lg">We'd love to celebrate with you!</p>
+          
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScNHOQU7oRR_MQKaHZydV6cXsGS2iXdQ540KLUApjJX8J49-A/viewform?embedded=true" 
+            width="100%" 
+            height="700" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            style="border-radius: 8px;"
+          >
+            Loading RSVP form…
+          </iframe>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="bg-gradient-to-r from-yellow-200 via-amber-200 to-orange-200 p-4 text-center">
+        <p class="font-pacifico text-amber-600">Made with 🌈 for Vardaan's wonderful first year</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Confetti animation on load
+    const wonderEmojis = ['🌈', '🪐', '☁️', '🌳', '☀️', '🌙', '⭐'];
+    const confettiContainer = document.getElementById('confetti');
+    
+    for (let i = 0; i < 30; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'absolute confetti';
+      confetti.style.left = Math.random() * 100 + '%';
+      confetti.style.top = '-20px';
+      confetti.style.animationDuration = (3 + Math.random() * 2) + 's';
+      confetti.style.animationDelay = Math.random() * 2 + 's';
+      confetti.style.fontSize = '24px';
+      confetti.textContent = wonderEmojis[Math.floor(Math.random() * wonderEmojis.length)];
+      confettiContainer.appendChild(confetti);
+    }
+
+    // Hide confetti after animation
+    setTimeout(() => {
+      confettiContainer.style.display = 'none';
+    }, 6000);
+  </script>
+</body>
+</html>
