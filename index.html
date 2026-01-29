@@ -11,6 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&family=Lobster&family=Pacifico&family=Indie+Flower&display=swap" rel="stylesheet">
   <style>
+    /* CRITICAL: Enable scrolling */
+    html {
+      height: auto !important;
+      overflow-y: scroll !important;
+    }
+    body {
+      height: auto !important;
+      min-height: 100vh;
+      overflow-y: visible !important;
+    }
+    
     @keyframes fall {
       to { transform: translateY(100vh) rotate(720deg); }
     }
@@ -36,6 +47,18 @@
     .float { animation: float 3s ease-in-out infinite; }
     .rise-up { animation: riseUp 4s ease-in-out infinite; }
     
+    /* Fixed elements should not block interaction */
+    .fixed-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    
     /* Style the Google Form iframe container */
     .google-form-container {
       background: linear-gradient(to bottom, #fefce8, #fef3c7);
@@ -48,10 +71,10 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-sky-200 via-yellow-100 to-amber-100 py-8 px-4 relative overflow-x-hidden">
+<body class="bg-gradient-to-b from-sky-200 via-yellow-100 to-amber-100 py-8 px-4 relative">
   
   <!-- Subtle Edge Floaters -->
-  <div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="fixed-bg">
     <div class="absolute text-2xl opacity-20 float-gentle" style="top: 5%; left: 3%;">🌈</div>
     <div class="absolute text-2xl opacity-20 float-gentle" style="top: 15%; right: 2%; animation-delay: 0.5s;">🪐</div>
     <div class="absolute text-2xl opacity-20 float-gentle" style="top: 35%; left: 1%; animation-delay: 1s;">☁️</div>
@@ -61,9 +84,9 @@
   </div>
 
   <!-- Confetti Container -->
-  <div id="confetti" class="fixed inset-0 pointer-events-none z-50"></div>
+  <div id="confetti" class="fixed-bg" style="z-index: 50;"></div>
 
-  <div class="max-w-lg mx-auto relative z-10">
+  <div class="max-w-lg mx-auto relative" style="z-index: 10;">
     <!-- Main Card -->
     <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-4" style="border-color: #FCD34D;">
       
